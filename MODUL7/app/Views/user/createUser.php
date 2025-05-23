@@ -30,7 +30,7 @@
         <div class="row mb-3">
           <label for="password" class="col-sm-2 col-form-label">Password</label>
           <div class="col-sm-10">
-            <input type="text" class="form-control <?= (isset($validation) && $validation->hasError('password')) ? 'is-invalid' : '' ?>" id="password" name="password" value="<?= old('passowrd') ?>">
+            <input type="text" class="form-control <?= (isset($validation) && $validation->hasError('password')) ? 'is-invalid' : '' ?>" id="password" name="password" value="<?= old('password') ?>">
           <div class="invalid-feedback">
             <?= (isset($validation)) ? $validation->getError('password') : '' ?>
           </div>
